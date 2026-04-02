@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ali Sheraz – Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">AS<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="#contact">Hire Me</a></div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="particles"></canvas>
+    <div class="hero-content">
+      <div class="hero-tag" data-aos="fade-down">Available for freelance work</div>
+      <h1 class="hero-name">
+        <span class="line" data-text="Ali">Ali</span>
+        <span class="line accent" data-text="Sheraz">Sheraz</span>
+      </h1>
+      <p class="hero-desc">Full Stack Developer specialising in <span class="highlight">Laravel</span>, <span class="highlight">React</span> &amp; <span class="highlight">React Native</span></p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+      <div class="hero-scroll">
+<!--        <span>Scroll</span>-->
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-badge">
+      <div class="badge-ring"></div>
+      <div class="badge-text">
+        <svg viewBox="0 0 200 200"><path id="circle-path" d="M 100,100 m -70,0 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0"/><text><textPath href="#circle-path">LARAVEL · REACT · REACT NATIVE · ANGULAR · PHP ·&nbsp;</textPath></text></svg>
+      </div>
+      <span class="badge-icon">&lt;/&gt;</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">01 — About Me</div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-title">Building the web, <em>one layer at a time</em></h2>
+          <p class="about-bio">I'm Ali Sheraz, a Full Stack Developer based in Islamabad, Pakistan. Completed  my BS in Computer Science at Federal Urdu University with a CGPA of 3.6, while simultaneously delivering real-world projects at Brantum Technologies.</p>
+          <p class="about-bio">I thrive at the intersection of clean backend architecture and polished frontend experiences — building platforms that are fast, scalable, and genuinely useful.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Coding</span></div>
+            <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Live Projects</span></div>
+            <div class="stat"><span class="stat-num">3.6</span><span class="stat-label">CGPA</span></div>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>Backend</h4>
+              <div class="skill-tags">
+                <span>Laravel</span><span>PHP</span><span>MySQL</span><span>REST APIs</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Frontend</h4>
+              <div class="skill-tags">
+                <span>React</span><span>Angular 16</span><span>React Native</span><span>WordPress</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Integrations</h4>
+              <div class="skill-tags">
+                <span>Stripe</span><span>Amazon S3</span><span>Twilio</span><span>Amazon Chime</span><span>HubSpot</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Tools</h4>
+              <div class="skill-tags">
+                <span>PHPStorm</span><span>Postman</span><span>GitHub</span><span>Swagger</span><span>Make</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">02 — Projects</div>
+      <h2 class="section-title">Things I've <em>shipped</em></h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-number">01</div>
+          <div class="project-body">
+            <div class="project-tags"><span>Angular 16</span><span>Laravel</span><span>MySQL</span><span>Stripe</span></div>
+            <h3>MyTeamDoctor</h3>
+            <p>A full-stack healthcare management platform with appointment booking, doctor–patient management, role-based access, and live video consultations via Amazon Chime. Integrated Stripe for payments and Twilio for notifications.</p>
+            <div class="project-links">
+              <a href="https://new.myteamdoctor.com/" target="_blank" class="project-link">Live Site →</a>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-number">02</div>
+          <div class="project-body">
+            <div class="project-tags"><span>Laravel</span><span>CRM APIs</span><span>WhatsApp</span></div>
+            <h3>Travel Away With Us</h3>
+            <p>A real-time airline ticket CRM portal with token-based auth, multi-API integration, and automated email and WhatsApp notifications for booking flows.</p>
+            <div class="project-links">
+              <a href="https://tawuportal.com/login" target="_blank" class="project-link">Live Site →</a>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-number">03</div>
+          <div class="project-body">
+            <div class="project-tags"><span>Terminal 4</span><span>CMS</span><span>CRM</span></div>
+            <h3>QMUL CRM System</h3>
+            <p>A custom CRM system for Queen Mary University of London — full architecture design, page layouts, and a WordPress-like CMS for effortless content management.</p>
+            <div class="project-links">
+              <a href="https://www.qmul.ac.uk/" target="_blank" class="project-link">Live Site →</a>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-number">04</div>
+          <div class="project-body">
+            <div class="project-tags"><span>WordPress</span><span>Elementor</span><span>HubSpot</span></div>
+            <h3>Brantum Technologies Website</h3>
+            <p>Company website built with WordPress and Elementor, featuring a custom plugin for the contact form integrated directly with HubSpot CRM.</p>
+            <div class="project-links">
+              <a href="https://brantum-technologies.com/" target="_blank" class="project-link">Live Site →</a>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-number">05</div>
+          <div class="project-body">
+            <div class="project-tags"><span>React Native</span><span>Laravel</span><span>Currently in Development</span></div>
+            <h3>Snabb Cap</h3>
+            <p>Company website and App built with React Native and Laravel, featuring a many core features from react native and also a touch of Web Sockets.</p>
+            <div class="project-links">
+              <a href="https://new.snabbcab.com/login" target="_blank" class="project-link">Live Site →</a>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">03 — Contact</div>
+      <h2 class="section-title">Let's build something <em>together</em></h2>
+      <p class="contact-sub">Whether you have a project in mind or just want to chat — my inbox is always open.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:alisheraz9117@icloud.com" class="contact-item">
+            <span class="contact-icon">✉</span>
+            <span>alisheraz9117@icloud.com</span>
+          </a>
+          <a href="tel:+923161522618" class="contact-item">
+            <span class="contact-icon">✆</span>
+            <span>+92 316 1522618</span>
+          </a>
+          <a href="https://www.linkedin.com/in/ali-sheraz-37b74a20b/" target="_blank" class="contact-item">
+            <span class="contact-icon">in</span>
+            <span>linkedin.com/in/ali-sheraz</span>
+          </a>
+          <div class="contact-item">
+            <span class="contact-icon">⌖</span>
+            <span>Islamabad, Pakistan</span>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-logo">AS<span class="dot">.</span></span>
+      <span class="footer-copy">© 2025 Ali Sheraz. All rights reserved.</span>
+      <span class="footer-made">Built with passion 🖤</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
