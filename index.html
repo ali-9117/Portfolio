@@ -197,17 +197,43 @@
             <span>Islamabad, Pakistan</span>
           </div>
         </div>
-        <form class="contact-form" id="contactForm">
+        <form
+                class="contact-form"
+                id="contactForm"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+        >
+          <!-- Hidden input for Netlify -->
+          <input type="hidden" name="form-name" value="contact" />
+
+          <!-- Honeypot (anti-spam) -->
+          <p style="display:none;">
+            <label>Don’t fill this out: <input name="bot-field" /></label>
+          </p>
+
           <div class="form-group">
-            <input type="text" placeholder="Your Name" required />
+            <input type="text" name="name" placeholder="Your Name" required />
           </div>
+
           <div class="form-group">
-            <input type="email" placeholder="Your Email" required />
+            <input type="email" name="email" placeholder="Your Email" required />
           </div>
+
           <div class="form-group">
-            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary full-width">Send Message</button>
+
+          <button type="submit" class="btn btn-primary full-width">
+            Send Message
+          </button>
+        </form>
+
+        <form name="contact" method="POST" data-netlify="true" hidden>
+          <input type="text" name="name" />
+          <input type="email" name="email" />
+          <textarea name="message"></textarea>
         </form>
       </div>
     </div>
