@@ -147,7 +147,7 @@
   const form = document.getElementById('contactForm');
   if (!form) return;
   form.addEventListener('submit', e => {
-    e.preventDefault();
+    // e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
     const orig = btn.textContent;
     btn.textContent = '✓ Message Sent!';
